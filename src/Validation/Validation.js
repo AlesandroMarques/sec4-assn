@@ -3,23 +3,21 @@ import React from 'react';
 
 const validation = (props) => {
     const minLen = 10;
-    let validationOutput = (
-        <div>
-            <p>Text to Short</p>
-            </div>
-    );
+    let validationOutput = 'Text to Short';
+     
 
 if(props.getLen > minLen){
-    validationOutput = (
-        <div>
-            <p>Text long enough</p>
-        </div>
-    );
-
-
+    validationOutput = 'Text Long Enough';
 }
 
-return(validationOutput);
+
+
+
+return(
+<div>
+    <p>{validationOutput}</p>
+</div>
+);
 
 }
 
